@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/andersoncompalas/Documents/Winter 2025/ECE 263/acompala/Chapter8.py", line 375, in <module>
+    ourWindow = Chapter6()
+                ^^^^^^^^^^
+  File "/Users/andersoncompalas/Documents/Winter 2025/ECE 263/acompala/Chapter8.py", line 31, in __init__
+    self.simulateInstance = ece163.Simulation.Chapter8Simulate.Chapter8Simulate()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/andersoncompalas/Documents/Winter 2025/ECE 263/acompala/ece163/Simulation/Chapter8Simulate.py", line 12, in __init__
+    self.underlyingModel = VehicleClosedLoopControl.VehicleClosedLoopControl(rudderControlSource='YAW', useSensors=True, useEstimator=True)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/andersoncompalas/Documents/Winter 2025/ECE 263/acompala/ece163/Controls/VehicleClosedLoopControl.py", line 240, in __init__
+    self.vehicleEstimator = VehicleEstimator(dT=self.dT, sensorsModel=self.sensorsModel)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
